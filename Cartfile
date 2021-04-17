@@ -1,0 +1,4 @@
+github "ninjaprox/NVActivityIndicatorView"
+github "Alamofire/Alamofire" == 5.0.2
+github "SwiftyJSON/SwiftyJSON"
+github "alibaba/HandyJSON"
