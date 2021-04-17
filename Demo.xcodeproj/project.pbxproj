@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A50CCCCC2625BC55001A2DB0 /* Utitly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CCCCB2625BC55001A2DB0 /* Utitly.swift */; };
-		A50CCCCE2625BCE3001A2DB0 /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50CCCCD2625BCE3001A2DB0 /* NVActivityIndicatorView.framework */; };
-		A50CCCCF2625BCE3001A2DB0 /* NVActivityIndicatorView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A50CCCCD2625BCE3001A2DB0 /* NVActivityIndicatorView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A50CCCD12625BCEF001A2DB0 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50CCCD02625BCEF001A2DB0 /* SwiftyJSON.framework */; };
 		A50CCCD22625BCEF001A2DB0 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A50CCCD02625BCEF001A2DB0 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A5A6D23826274C1300426A5E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6D23626274C1300426A5E /* TableViewCell.swift */; };
@@ -69,7 +67,6 @@
 				A50CCCD22625BCEF001A2DB0 /* SwiftyJSON.framework in Embed Frameworks */,
 				A5C6C6BD26258D58001BE52D /* Alamofire.framework in Embed Frameworks */,
 				A5C6C6C326258D68001BE52D /* HandyJSON.framework in Embed Frameworks */,
-				A50CCCCF2625BCE3001A2DB0 /* NVActivityIndicatorView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,7 +113,6 @@
 				A50CCCD12625BCEF001A2DB0 /* SwiftyJSON.framework in Frameworks */,
 				A5C6C6BC26258D58001BE52D /* Alamofire.framework in Frameworks */,
 				A5C6C6C226258D68001BE52D /* HandyJSON.framework in Frameworks */,
-				A50CCCCE2625BCE3001A2DB0 /* NVActivityIndicatorView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,7 +564,6 @@
 		A5C6C67C26242194001BE52D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -598,7 +593,6 @@
 		A5C6C67D26242194001BE52D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
