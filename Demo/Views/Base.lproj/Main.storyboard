@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rZ8-Ob-qOP"/>
+                        <viewControllerLayoutGuide type="bottom" id="XIA-kV-nSN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2NP-KB-8aj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IAC-eQ-V42">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.5725490196078431" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="egD-v4-hwe">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="egD-v4-hwe" id="RpZ-wt-zyl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="kdq-6i-5qa"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ARm-9h-x2v"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8M-rX-Pmf">
+                                <rect key="frame" x="0.0" y="88" width="414" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="臺北市立動物園_植物資料" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LU3-gs-DeV">
+                                        <rect key="frame" x="96" y="26" width="244" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" white="0.93407099869999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ub6-S7-qwi">
+                                        <rect key="frame" x="107" y="67" width="200" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="EiK-sb-1Tt"/>
+                                            <constraint firstAttribute="height" constant="30" id="hf8-Y3-CW0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" white="0.93407099869999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.5725490196078431" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ub6-S7-qwi" firstAttribute="top" secondItem="LU3-gs-DeV" secondAttribute="bottom" constant="15" id="DZC-0m-tOS"/>
+                                    <constraint firstItem="LU3-gs-DeV" firstAttribute="top" secondItem="g8M-rX-Pmf" secondAttribute="top" constant="26" id="PdE-hM-6Zh"/>
+                                    <constraint firstItem="ub6-S7-qwi" firstAttribute="centerX" secondItem="g8M-rX-Pmf" secondAttribute="centerX" id="aJS-fL-7Yt"/>
+                                    <constraint firstItem="LU3-gs-DeV" firstAttribute="centerX" secondItem="g8M-rX-Pmf" secondAttribute="centerX" constant="11" id="gBn-hF-HJl"/>
+                                    <constraint firstAttribute="height" constant="150" id="tdm-Xq-pj0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2NP-KB-8aj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="0nG-9o-wkG"/>
+                            <constraint firstAttribute="trailing" secondItem="IAC-eQ-V42" secondAttribute="trailing" id="1Px-o5-ZpO"/>
+                            <constraint firstAttribute="trailing" secondItem="g8M-rX-Pmf" secondAttribute="trailing" id="3F3-wf-s4C"/>
+                            <constraint firstItem="IAC-eQ-V42" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CW1-uQ-LEY"/>
+                            <constraint firstItem="2NP-KB-8aj" firstAttribute="top" secondItem="rZ8-Ob-qOP" secondAttribute="bottom" id="TuN-SR-LpZ"/>
+                            <constraint firstItem="g8M-rX-Pmf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UUt-E1-vZd"/>
+                            <constraint firstItem="XIA-kV-nSN" firstAttribute="top" secondItem="IAC-eQ-V42" secondAttribute="bottom" id="UXO-R0-e2j"/>
+                            <constraint firstItem="2NP-KB-8aj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cqm-PM-Asy"/>
+                            <constraint firstItem="g8M-rX-Pmf" firstAttribute="top" secondItem="2NP-KB-8aj" secondAttribute="bottom" id="hTY-V7-rLr"/>
+                            <constraint firstItem="IAC-eQ-V42" firstAttribute="top" secondItem="2NP-KB-8aj" secondAttribute="bottom" id="m6R-EJ-Dd7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="boardLabel" destination="ub6-S7-qwi" id="r1r-3V-gG5"/>
+                        <outlet property="boardView" destination="g8M-rX-Pmf" id="8be-hU-EgF"/>
+                        <outlet property="customNavigationBar" destination="2NP-KB-8aj" id="2Pt-cY-AKa"/>
+                        <outlet property="tableView" destination="IAC-eQ-V42" id="6oj-lL-D6E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-168.11594202898553" y="121.875"/>
+        </scene>
+    </scenes>
+</document>
